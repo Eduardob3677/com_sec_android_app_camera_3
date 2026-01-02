@@ -2987,6 +2987,12 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
+    const-string v1, "view_mode"
+
+    sget-object v2, Lcom/sec/android/app/camera/interfaces/SaLogEventId;->SETTING_BUTTON:Lcom/sec/android/app/camera/interfaces/SaLogEventId;
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
     return-void
 .end method
 
