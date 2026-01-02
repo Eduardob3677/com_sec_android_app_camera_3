@@ -79,9 +79,7 @@
 .method public static semGetCurrentUser()I
     .locals 1
 
-    invoke-static {}, Landroid/app/ActivityManager;->semGetCurrentUser()I
-
-    move-result v0
+    const/4 v0, 0x0
 
     return v0
 .end method
