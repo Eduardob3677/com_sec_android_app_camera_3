@@ -838,7 +838,7 @@
     :goto_0
     const-string p1, "isBluetoothLeDevice return : bluetoothDevice is null"
 
-    invoke-static {v0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return p0
 .end method

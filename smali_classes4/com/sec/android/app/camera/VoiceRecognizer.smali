@@ -801,7 +801,7 @@
 
     const-string v1, "stop : Returned because voice recognition is already stopped."
 
-    invoke-static {p0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     monitor-exit v0
 
