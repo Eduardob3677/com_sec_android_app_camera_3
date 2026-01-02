@@ -1045,7 +1045,7 @@
     goto :goto_2
 
     :cond_4
-    invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/ShootingMethodFragment;->removePreference(Ljava/lang/CharSequence;)V
+    # invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/ShootingMethodFragment;->removePreference(Ljava/lang/CharSequence;)V
 
     :cond_5
     const/4 v0, 0x0

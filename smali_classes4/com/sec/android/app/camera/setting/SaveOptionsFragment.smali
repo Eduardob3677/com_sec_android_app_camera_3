@@ -1484,7 +1484,7 @@
 
     sget-object v0, Lcom/sec/android/app/camera/interfaces/CameraSettings$Key;->HEIF:Lcom/sec/android/app/camera/interfaces/CameraSettings$Key;
 
-    invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/SaveOptionsFragment;->removePreference(Lcom/sec/android/app/camera/interfaces/CameraSettings$Key;)V
+    # invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/SaveOptionsFragment;->removePreference(Lcom/sec/android/app/camera/interfaces/CameraSettings$Key;)V
 
     :cond_3
     invoke-direct {p0}, Lcom/sec/android/app/camera/setting/SaveOptionsFragment;->updateDuplicatedPreference()V
