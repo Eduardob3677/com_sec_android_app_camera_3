@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@id/group_action_tool_bar">
+        <item android:id="@id/action_tool_bar_add_scan" android:title="@string/add_scan" app:showAsAction="always" />
+        <item android:id="@id/action_tool_bar_next" android:title="@string/scan_preview_next" app:showAsAction="always" />
+    </group>
+</menu>

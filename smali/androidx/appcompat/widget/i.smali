@@ -1,0 +1,58 @@
+.class public final synthetic Landroidx/appcompat/widget/i;
+.super Ljava/lang/Object;
+.source "r8-map-id-5474ffd14539c415065aa2a9f295d092949679b6f307d2b053e45bec25b95b73"
+
+# interfaces
+.implements Landroid/view/View$OnLayoutChangeListener;
+
+
+# instance fields
+.field public final synthetic a:Landroidx/appcompat/widget/TooltipCompatHandler;
+
+.field public final synthetic b:Landroid/content/res/Resources;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroidx/appcompat/widget/TooltipCompatHandler;Landroid/content/res/Resources;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Landroidx/appcompat/widget/i;->a:Landroidx/appcompat/widget/TooltipCompatHandler;
+
+    iput-object p2, p0, Landroidx/appcompat/widget/i;->b:Landroid/content/res/Resources;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
+    .locals 11
+
+    iget-object v0, p0, Landroidx/appcompat/widget/i;->a:Landroidx/appcompat/widget/TooltipCompatHandler;
+
+    iget-object v1, p0, Landroidx/appcompat/widget/i;->b:Landroid/content/res/Resources;
+
+    move-object v2, p1
+
+    move v3, p2
+
+    move v4, p3
+
+    move v5, p4
+
+    move/from16 v6, p5
+
+    move/from16 v7, p6
+
+    move/from16 v8, p7
+
+    move/from16 v9, p8
+
+    move/from16 v10, p9
+
+    invoke-static/range {v0 .. v10}, Landroidx/appcompat/widget/TooltipCompatHandler;->a(Landroidx/appcompat/widget/TooltipCompatHandler;Landroid/content/res/Resources;Landroid/view/View;IIIIIIII)V
+
+    return-void
+.end method

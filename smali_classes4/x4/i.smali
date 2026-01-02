@@ -1,0 +1,61 @@
+.class public abstract Lx4/i;
+.super Lx4/c;
+.source "r8-map-id-5474ffd14539c415065aa2a9f295d092949679b6f307d2b053e45bec25b95b73"
+
+# interfaces
+.implements Lkotlin/jvm/internal/k;
+
+
+# instance fields
+.field private final arity:I
+
+
+# direct methods
+.method public constructor <init>(ILv4/c;)V
+    .locals 0
+
+    invoke-direct {p0, p2}, Lx4/c;-><init>(Lv4/c;)V
+
+    iput p1, p0, Lx4/i;->arity:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getArity()I
+    .locals 0
+
+    iget p0, p0, Lx4/i;->arity:I
+
+    return p0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 1
+
+    invoke-virtual {p0}, Lx4/a;->getCompletion()Lv4/c;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    sget-object v0, Lkotlin/jvm/internal/F;->a:Lkotlin/jvm/internal/G;
+
+    invoke-virtual {v0, p0}, Lkotlin/jvm/internal/G;->i(Lkotlin/jvm/internal/k;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "renderLambdaToString(...)"
+
+    invoke-static {p0, v0}, Lkotlin/jvm/internal/p;->d(Ljava/lang/Object;Ljava/lang/String;)V
+
+    return-object p0
+
+    :cond_0
+    invoke-super {p0}, Lx4/a;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method

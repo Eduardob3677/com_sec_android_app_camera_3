@@ -1,0 +1,27 @@
+.class public final LD/a;
+.super Ljava/lang/Object;
+.source "r8-map-id-5474ffd14539c415065aa2a9f295d092949679b6f307d2b053e45bec25b95b73"
+
+
+# instance fields
+.field public a:I
+
+.field public b:I
+
+.field public c:I
+
+.field public d:I
+
+.field public e:Z
+
+.field public f:Z
+
+.field public g:I
+
+.field public h:I
+
+.field public i:I
+
+.field public j:I
+
+.field public k:[I

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center_vertical" android:id="@id/scan_filter_main" android:focusable="true" android:layout_width="wrap_content" android:layout_height="@dimen/multi_scan_filter_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/multi_scan_filter_text_size" android:textColor="@color/scan_filter_item_color_selector" android:gravity="center" android:id="@id/scan_filter_text" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/multi_scan_filter_item_height" android:maxWidth="@dimen/multi_scan_filter_item_max_width" android:minWidth="@dimen/multi_scan_filter_item_min_width" android:maxLines="2" style="@style/SecSemiBold"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</FrameLayout>

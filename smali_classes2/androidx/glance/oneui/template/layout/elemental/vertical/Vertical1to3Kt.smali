@@ -1,0 +1,355 @@
+.class public final Landroidx/glance/oneui/template/layout/elemental/vertical/Vertical1to3Kt;
+.super Ljava/lang/Object;
+.source "r8-map-id-5474ffd14539c415065aa2a9f295d092949679b6f307d2b053e45bec25b95b73"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u001c\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0008\u0005\u001aI\u0010\t\u001a\u00020\u00052\u0008\u0008\u0002\u0010\u0001\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u00022\u0011\u0010\u0007\u001a\r\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\u0002\u0008\u00062\u0011\u0010\u0008\u001a\r\u0012\u0004\u0012\u00020\u00050\u0004\u00a2\u0006\u0002\u0008\u0006H\u0007\u00a2\u0006\u0004\u0008\t\u0010\n\u00a8\u0006\u000b"
+    }
+    d2 = {
+        "Landroidx/glance/oneui/template/component/padding/Padding;",
+        "padding",
+        "Landroidx/glance/unit/ColorProvider;",
+        "backgroundColor",
+        "Lkotlin/Function0;",
+        "Lr4/o;",
+        "Landroidx/compose/runtime/Composable;",
+        "top",
+        "bottom",
+        "Vertical1to3",
+        "(Landroidx/glance/oneui/template/component/padding/Padding;Landroidx/glance/unit/ColorProvider;LF4/n;LF4/n;Landroidx/compose/runtime/Composer;II)V",
+        "glance-oneui-template_release"
+    }
+    k = 0x2
+    mv = {
+        0x1,
+        0x9,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# direct methods
+.method public static final Vertical1to3(Landroidx/glance/oneui/template/component/padding/Padding;Landroidx/glance/unit/ColorProvider;LF4/n;LF4/n;Landroidx/compose/runtime/Composer;II)V
+    .locals 12
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/glance/oneui/template/component/padding/Padding;",
+            "Landroidx/glance/unit/ColorProvider;",
+            "LF4/n;",
+            "LF4/n;",
+            "Landroidx/compose/runtime/Composer;",
+            "II)V"
+        }
+    .end annotation
+
+    move/from16 v5, p5
+
+    const-string v0, "top"
+
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "bottom"
+
+    invoke-static {p3, v0}, Lkotlin/jvm/internal/p;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const v0, 0x58e9b02b
+
+    move-object/from16 v1, p4
+
+    invoke-interface {v1, v0}, Landroidx/compose/runtime/Composer;->startRestartGroup(I)Landroidx/compose/runtime/Composer;
+
+    move-result-object v9
+
+    and-int/lit8 v1, v5, 0xe
+
+    const/4 v2, 0x2
+
+    if-nez v1, :cond_1
+
+    and-int/lit8 v1, p6, 0x1
+
+    if-nez v1, :cond_0
+
+    invoke-interface {v9, p0}, Landroidx/compose/runtime/Composer;->changed(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    const/4 v1, 0x4
+
+    goto :goto_0
+
+    :cond_0
+    move v1, v2
+
+    :goto_0
+    or-int/2addr v1, v5
+
+    goto :goto_1
+
+    :cond_1
+    move v1, v5
+
+    :goto_1
+    and-int/lit8 v3, p6, 0x2
+
+    if-eqz v3, :cond_2
+
+    or-int/lit8 v1, v1, 0x10
+
+    :cond_2
+    and-int/lit8 v4, p6, 0x4
+
+    if-eqz v4, :cond_3
+
+    or-int/lit16 v1, v1, 0x180
+
+    goto :goto_3
+
+    :cond_3
+    and-int/lit16 v4, v5, 0x380
+
+    if-nez v4, :cond_5
+
+    invoke-interface {v9, p2}, Landroidx/compose/runtime/Composer;->changedInstance(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    const/16 v4, 0x100
+
+    goto :goto_2
+
+    :cond_4
+    const/16 v4, 0x80
+
+    :goto_2
+    or-int/2addr v1, v4
+
+    :cond_5
+    :goto_3
+    and-int/lit8 v4, p6, 0x8
+
+    if-eqz v4, :cond_6
+
+    or-int/lit16 v1, v1, 0xc00
+
+    goto :goto_5
+
+    :cond_6
+    and-int/lit16 v4, v5, 0x1c00
+
+    if-nez v4, :cond_8
+
+    invoke-interface {v9, p3}, Landroidx/compose/runtime/Composer;->changedInstance(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_7
+
+    const/16 v4, 0x800
+
+    goto :goto_4
+
+    :cond_7
+    const/16 v4, 0x400
+
+    :goto_4
+    or-int/2addr v1, v4
+
+    :cond_8
+    :goto_5
+    if-ne v3, v2, :cond_a
+
+    and-int/lit16 v2, v1, 0x16db
+
+    const/16 v4, 0x492
+
+    if-ne v2, v4, :cond_a
+
+    invoke-interface {v9}, Landroidx/compose/runtime/Composer;->getSkipping()Z
+
+    move-result v2
+
+    if-nez v2, :cond_9
+
+    goto :goto_6
+
+    :cond_9
+    invoke-interface {v9}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
+
+    move-object v1, p0
+
+    move-object v2, p1
+
+    goto/16 :goto_a
+
+    :cond_a
+    :goto_6
+    invoke-interface {v9}, Landroidx/compose/runtime/Composer;->startDefaults()V
+
+    and-int/lit8 v2, v5, 0x1
+
+    if-eqz v2, :cond_e
+
+    invoke-interface {v9}, Landroidx/compose/runtime/Composer;->getDefaultsInvalid()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_b
+
+    goto :goto_8
+
+    :cond_b
+    invoke-interface {v9}, Landroidx/compose/runtime/Composer;->skipToGroupEnd()V
+
+    and-int/lit8 v2, p6, 0x1
+
+    if-eqz v2, :cond_c
+
+    and-int/lit8 v1, v1, -0xf
+
+    :cond_c
+    if-eqz v3, :cond_d
+
+    :goto_7
+    and-int/lit8 v1, v1, -0x71
+
+    :cond_d
+    move-object v6, p0
+
+    move-object v7, p1
+
+    goto :goto_9
+
+    :cond_e
+    :goto_8
+    and-int/lit8 v2, p6, 0x1
+
+    if-eqz v2, :cond_f
+
+    sget-object p0, Landroidx/glance/oneui/template/component/padding/Padding;->Companion:Landroidx/glance/oneui/template/component/padding/Padding$Companion;
+
+    invoke-virtual {p0}, Landroidx/glance/oneui/template/component/padding/Padding$Companion;->getNone()Landroidx/glance/oneui/template/component/padding/Padding;
+
+    move-result-object p0
+
+    and-int/lit8 v1, v1, -0xf
+
+    :cond_f
+    if-eqz v3, :cond_d
+
+    sget-object p1, Landroidx/compose/ui/graphics/Color;->Companion:Landroidx/compose/ui/graphics/Color$Companion;
+
+    invoke-virtual {p1}, Landroidx/compose/ui/graphics/Color$Companion;->getTransparent-0d7_KjU()J
+
+    move-result-wide v2
+
+    invoke-static {v2, v3}, Landroidx/glance/unit/ColorProviderKt;->ColorProvider-8_81llA(J)Landroidx/glance/unit/ColorProvider;
+
+    move-result-object p1
+
+    goto :goto_7
+
+    :goto_9
+    invoke-interface {v9}, Landroidx/compose/runtime/Composer;->endDefaults()V
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_10
+
+    const/4 p0, -0x1
+
+    const-string p1, "androidx.glance.oneui.template.layout.elemental.vertical.Vertical1to3 (Vertical1to3.kt:26)"
+
+    invoke-static {v0, v1, p0, p1}, Landroidx/compose/runtime/ComposerKt;->traceEventStart(IIILjava/lang/String;)V
+
+    :cond_10
+    new-instance p0, Lr4/m;
+
+    sget-object p1, Landroidx/glance/layout/WeightValue;->Companion:Landroidx/glance/layout/WeightValue$Companion;
+
+    invoke-virtual {p1}, Landroidx/glance/layout/WeightValue$Companion;->getWEIGHT_1()Landroidx/glance/layout/WeightValue;
+
+    move-result-object v0
+
+    sget-object v2, Landroidx/glance/oneui/template/component/padding/Padding;->Companion:Landroidx/glance/oneui/template/component/padding/Padding$Companion;
+
+    invoke-virtual {v2}, Landroidx/glance/oneui/template/component/padding/Padding$Companion;->getNone()Landroidx/glance/oneui/template/component/padding/Padding;
+
+    move-result-object v3
+
+    invoke-direct {p0, v0, v3, p2}, Lr4/m;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    new-instance v0, Lr4/m;
+
+    invoke-virtual {p1}, Landroidx/glance/layout/WeightValue$Companion;->getWEIGHT_3()Landroidx/glance/layout/WeightValue;
+
+    move-result-object p1
+
+    invoke-virtual {v2}, Landroidx/glance/oneui/template/component/padding/Padding$Companion;->getNone()Landroidx/glance/oneui/template/component/padding/Padding;
+
+    move-result-object v2
+
+    invoke-direct {v0, p1, v2, p3}, Lr4/m;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    filled-new-array {p0, v0}, [Lr4/m;
+
+    move-result-object p0
+
+    invoke-static {p0}, Ls4/u;->J([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v8
+
+    and-int/lit8 p0, v1, 0xe
+
+    or-int/lit8 v10, p0, 0x40
+
+    const/4 v11, 0x0
+
+    invoke-static/range {v6 .. v11}, Landroidx/glance/oneui/template/layout/internal/VerticalLayoutKt;->VerticalRatioLayout(Landroidx/glance/oneui/template/component/padding/Padding;Landroidx/glance/unit/ColorProvider;Ljava/util/List;Landroidx/compose/runtime/Composer;II)V
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->isTraceInProgress()Z
+
+    move-result p0
+
+    if-eqz p0, :cond_11
+
+    invoke-static {}, Landroidx/compose/runtime/ComposerKt;->traceEventEnd()V
+
+    :cond_11
+    move-object v1, v6
+
+    move-object v2, v7
+
+    :goto_a
+    invoke-interface {v9}, Landroidx/compose/runtime/Composer;->endRestartGroup()Landroidx/compose/runtime/ScopeUpdateScope;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_12
+
+    new-instance v0, Landroidx/glance/oneui/template/layout/elemental/vertical/Vertical1to3Kt$Vertical1to3$1;
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    move/from16 v6, p6
+
+    invoke-direct/range {v0 .. v6}, Landroidx/glance/oneui/template/layout/elemental/vertical/Vertical1to3Kt$Vertical1to3$1;-><init>(Landroidx/glance/oneui/template/component/padding/Padding;Landroidx/glance/unit/ColorProvider;LF4/n;LF4/n;II)V
+
+    invoke-interface {p0, v0}, Landroidx/compose/runtime/ScopeUpdateScope;->updateScope(LF4/n;)V
+
+    :cond_12
+    return-void
+.end method

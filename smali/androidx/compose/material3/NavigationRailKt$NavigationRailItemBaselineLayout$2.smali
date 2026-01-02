@@ -1,0 +1,428 @@
+.class final Landroidx/compose/material3/NavigationRailKt$NavigationRailItemBaselineLayout$2;
+.super Ljava/lang/Object;
+.source "r8-map-id-5474ffd14539c415065aa2a9f295d092949679b6f307d2b053e45bec25b95b73"
+
+# interfaces
+.implements Landroidx/compose/ui/layout/MeasurePolicy;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Landroidx/compose/material3/NavigationRailKt;->NavigationRailItemBaselineLayout(LF4/n;LF4/n;LF4/n;LF4/n;ZFLandroidx/compose/runtime/Composer;I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    k = 0x3
+    mv = {
+        0x1,
+        0x7,
+        0x1
+    }
+    xi = 0x30
+.end annotation
+
+
+# instance fields
+.field final synthetic $alwaysShowLabel:Z
+
+.field final synthetic $animationProgress:F
+
+.field final synthetic $label:LF4/n;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "LF4/n;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(FLF4/n;Z)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(F",
+            "LF4/n;",
+            "Z)V"
+        }
+    .end annotation
+
+    iput p1, p0, Landroidx/compose/material3/NavigationRailKt$NavigationRailItemBaselineLayout$2;->$animationProgress:F
+
+    iput-object p2, p0, Landroidx/compose/material3/NavigationRailKt$NavigationRailItemBaselineLayout$2;->$label:LF4/n;
+
+    iput-boolean p3, p0, Landroidx/compose/material3/NavigationRailKt$NavigationRailItemBaselineLayout$2;->$alwaysShowLabel:Z
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final measure-3p2s80s(Landroidx/compose/ui/layout/MeasureScope;Ljava/util/List;J)Landroidx/compose/ui/layout/MeasureResult;
+    .locals 16
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroidx/compose/ui/layout/MeasureScope;",
+            "Ljava/util/List<",
+            "+",
+            "Landroidx/compose/ui/layout/Measurable;",
+            ">;J)",
+            "Landroidx/compose/ui/layout/MeasureResult;"
+        }
+    .end annotation
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p1
+
+    const-string v2, "$this$Layout"
+
+    invoke-static {v1, v2}, Lkotlin/jvm/internal/p;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v2, "measurables"
+
+    move-object/from16 v3, p2
+
+    invoke-static {v3, v2}, Lkotlin/jvm/internal/p;->e(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_0
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    const-string v5, "Collection contains no element matching the predicate."
+
+    if-eqz v4, :cond_b
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Landroidx/compose/ui/layout/Measurable;
+
+    invoke-static {v4}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    const-string v7, "icon"
+
+    invoke-static {v6, v7}, Lkotlin/jvm/internal/p;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_a
+
+    move-wide/from16 v7, p3
+
+    invoke-interface {v4, v7, v8}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroidx/compose/ui/layout/Placeable;->getWidth()I
+
+    move-result v4
+
+    invoke-static {}, Landroidx/compose/material3/NavigationRailKt;->access$getIndicatorHorizontalPadding$p()F
+
+    move-result v6
+
+    const/4 v9, 0x2
+
+    int-to-float v9, v9
+
+    mul-float/2addr v6, v9
+
+    invoke-static {v6}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
+
+    move-result v6
+
+    invoke-interface {v1, v6}, Landroidx/compose/ui/unit/Density;->roundToPx-0680j_4(F)I
+
+    move-result v6
+
+    add-int/2addr v6, v4
+
+    int-to-float v4, v6
+
+    iget v10, v0, Landroidx/compose/material3/NavigationRailKt$NavigationRailItemBaselineLayout$2;->$animationProgress:F
+
+    mul-float/2addr v4, v10
+
+    invoke-static {v4}, LH4/a;->H(F)I
+
+    move-result v4
+
+    iget-object v10, v0, Landroidx/compose/material3/NavigationRailKt$NavigationRailItemBaselineLayout$2;->$label:LF4/n;
+
+    if-nez v10, :cond_0
+
+    invoke-static {}, Landroidx/compose/material3/NavigationRailKt;->access$getIndicatorVerticalPaddingNoLabel$p()F
+
+    move-result v10
+
+    goto :goto_1
+
+    :cond_0
+    invoke-static {}, Landroidx/compose/material3/NavigationRailKt;->access$getIndicatorVerticalPaddingWithLabel$p()F
+
+    move-result v10
+
+    :goto_1
+    invoke-virtual {v2}, Landroidx/compose/ui/layout/Placeable;->getHeight()I
+
+    move-result v11
+
+    mul-float/2addr v10, v9
+
+    invoke-static {v10}, Landroidx/compose/ui/unit/Dp;->constructor-impl(F)F
+
+    move-result v9
+
+    invoke-interface {v1, v9}, Landroidx/compose/ui/unit/Density;->roundToPx-0680j_4(F)I
+
+    move-result v9
+
+    add-int/2addr v9, v11
+
+    invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v10
+
+    :goto_2
+    invoke-interface {v10}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v11
+
+    if-eqz v11, :cond_9
+
+    invoke-interface {v10}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v11
+
+    check-cast v11, Landroidx/compose/ui/layout/Measurable;
+
+    invoke-static {v11}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
+
+    move-result-object v12
+
+    const-string v13, "indicatorRipple"
+
+    invoke-static {v12, v13}, Lkotlin/jvm/internal/p;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-eqz v12, :cond_8
+
+    sget-object v10, Landroidx/compose/ui/unit/Constraints;->Companion:Landroidx/compose/ui/unit/Constraints$Companion;
+
+    invoke-virtual {v10, v6, v9}, Landroidx/compose/ui/unit/Constraints$Companion;->fixed-JhjzzOo(II)J
+
+    move-result-wide v12
+
+    invoke-interface {v11, v12, v13}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
+
+    move-result-object v6
+
+    invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v10
+
+    :cond_1
+    invoke-interface {v10}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v11
+
+    const/4 v12, 0x0
+
+    if-eqz v11, :cond_2
+
+    invoke-interface {v10}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v11
+
+    move-object v13, v11
+
+    check-cast v13, Landroidx/compose/ui/layout/Measurable;
+
+    invoke-static {v13}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
+
+    move-result-object v13
+
+    const-string v14, "indicator"
+
+    invoke-static {v13, v14}, Lkotlin/jvm/internal/p;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v13
+
+    if-eqz v13, :cond_1
+
+    goto :goto_3
+
+    :cond_2
+    move-object v11, v12
+
+    :goto_3
+    check-cast v11, Landroidx/compose/ui/layout/Measurable;
+
+    if-eqz v11, :cond_3
+
+    sget-object v10, Landroidx/compose/ui/unit/Constraints;->Companion:Landroidx/compose/ui/unit/Constraints$Companion;
+
+    invoke-virtual {v10, v4, v9}, Landroidx/compose/ui/unit/Constraints$Companion;->fixed-JhjzzOo(II)J
+
+    move-result-wide v9
+
+    invoke-interface {v11, v9, v10}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
+
+    move-result-object v4
+
+    goto :goto_4
+
+    :cond_3
+    move-object v4, v12
+
+    :goto_4
+    iget-object v9, v0, Landroidx/compose/material3/NavigationRailKt$NavigationRailItemBaselineLayout$2;->$label:LF4/n;
+
+    if-eqz v9, :cond_6
+
+    invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v3
+
+    :goto_5
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v9
+
+    if-eqz v9, :cond_5
+
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v9
+
+    move-object v15, v9
+
+    check-cast v15, Landroidx/compose/ui/layout/Measurable;
+
+    invoke-static {v15}, Landroidx/compose/ui/layout/LayoutIdKt;->getLayoutId(Landroidx/compose/ui/layout/Measurable;)Ljava/lang/Object;
+
+    move-result-object v9
+
+    const-string v10, "label"
+
+    invoke-static {v9, v10}, Lkotlin/jvm/internal/p;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v9
+
+    if-eqz v9, :cond_4
+
+    const/16 v13, 0xb
+
+    const/4 v14, 0x0
+
+    const/4 v9, 0x0
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    invoke-static/range {v7 .. v14}, Landroidx/compose/ui/unit/Constraints;->copy-Zbe2FdA$default(JIIIIILjava/lang/Object;)J
+
+    move-result-wide v9
+
+    invoke-interface {v15, v9, v10}, Landroidx/compose/ui/layout/Measurable;->measure-BRTryo0(J)Landroidx/compose/ui/layout/Placeable;
+
+    move-result-object v12
+
+    goto :goto_6
+
+    :cond_4
+    move-wide/from16 v7, p3
+
+    goto :goto_5
+
+    :cond_5
+    new-instance v0, Ljava/util/NoSuchElementException;
+
+    invoke-direct {v0, v5}, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_6
+    :goto_6
+    iget-object v3, v0, Landroidx/compose/material3/NavigationRailKt$NavigationRailItemBaselineLayout$2;->$label:LF4/n;
+
+    if-nez v3, :cond_7
+
+    move-object v3, v6
+
+    move-wide/from16 v5, p3
+
+    invoke-static/range {v1 .. v6}, Landroidx/compose/material3/NavigationRailKt;->access$placeIcon-X9ElhV4(Landroidx/compose/ui/layout/MeasureScope;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;J)Landroidx/compose/ui/layout/MeasureResult;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_7
+    move-object v3, v6
+
+    invoke-static {v12}, Lkotlin/jvm/internal/p;->b(Ljava/lang/Object;)V
+
+    iget-boolean v7, v0, Landroidx/compose/material3/NavigationRailKt$NavigationRailItemBaselineLayout$2;->$alwaysShowLabel:Z
+
+    iget v8, v0, Landroidx/compose/material3/NavigationRailKt$NavigationRailItemBaselineLayout$2;->$animationProgress:F
+
+    move-object/from16 v0, p1
+
+    move-wide/from16 v5, p3
+
+    move-object v1, v12
+
+    invoke-static/range {v0 .. v8}, Landroidx/compose/material3/NavigationRailKt;->access$placeLabelAndIcon-zUg2_y0(Landroidx/compose/ui/layout/MeasureScope;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;Landroidx/compose/ui/layout/Placeable;JZF)Landroidx/compose/ui/layout/MeasureResult;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_8
+    move-object/from16 v1, p1
+
+    move-wide/from16 v7, p3
+
+    goto/16 :goto_2
+
+    :cond_9
+    new-instance v0, Ljava/util/NoSuchElementException;
+
+    invoke-direct {v0, v5}, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_a
+    move-object/from16 v1, p1
+
+    goto/16 :goto_0
+
+    :cond_b
+    new-instance v0, Ljava/util/NoSuchElementException;
+
+    invoke-direct {v0, v5}, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method

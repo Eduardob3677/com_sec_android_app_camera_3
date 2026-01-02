@@ -1,0 +1,54 @@
+.class public Lcom/samsung/android/camera/core2/container/SessionConfig$DefaultStreamConfig;
+.super Ljava/lang/Object;
+.source "r8-map-id-5474ffd14539c415065aa2a9f295d092949679b6f307d2b053e45bec25b95b73"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/samsung/android/camera/core2/container/SessionConfig;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x9
+    name = "DefaultStreamConfig"
+.end annotation
+
+
+# instance fields
+.field public final a:Ljava/lang/Integer;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/Integer;)V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lcom/samsung/android/camera/core2/container/SessionConfig$DefaultStreamConfig;->a:Ljava/lang/Integer;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public toString()Ljava/lang/String;
+    .locals 2
+
+    sget-object v0, Ljava/util/Locale;->UK:Ljava/util/Locale;
+
+    iget-object p0, p0, Lcom/samsung/android/camera/core2/container/SessionConfig$DefaultStreamConfig;->a:Ljava/lang/Integer;
+
+    const/4 v1, 0x0
+
+    filled-new-array {p0, v1}, [Ljava/lang/Object;
+
+    move-result-object p0
+
+    const-string v1, "streamOption: %d, physicalId: %s"
+
+    invoke-static {v0, v1, p0}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+.end method

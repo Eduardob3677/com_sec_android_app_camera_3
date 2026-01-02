@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?android:selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="@dimen/multi_scan_image_save_option_popup_item_horizontal_padding" android:paddingVertical="@dimen/multi_scan_image_save_option_popup_item_vertical_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/option_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" android:layout_marginEnd="@dimen/multi_scan_image_save_option_popup_item_horizontal_padding" />
+    <TextView android:textAppearance="@style/MultiScanImageSaveOptionPopupMenuItemText" android:id="@id/option_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>
