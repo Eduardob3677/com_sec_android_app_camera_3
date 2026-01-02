@@ -868,7 +868,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/SettingsToKeepFragment;->removePreference(Ljava/lang/CharSequence;)V
+    # invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/SettingsToKeepFragment;->removePreference(Ljava/lang/CharSequence;)V
 
     sget-object v0, Lcom/sec/android/app/camera/interfaces/CameraSettings$Key;->KEEP_SUPER_STEADY:Lcom/sec/android/app/camera/interfaces/CameraSettings$Key;
 
@@ -876,7 +876,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/SettingsToKeepFragment;->removePreference(Ljava/lang/CharSequence;)V
+    # invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/SettingsToKeepFragment;->removePreference(Ljava/lang/CharSequence;)V
 
     :cond_3
     sget-object v0, LO1/d;->SUPPORT_BOKEH_LENS_TYPE_CHANGE:LO1/d;
@@ -901,7 +901,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/SettingsToKeepFragment;->removePreference(Ljava/lang/CharSequence;)V
+    # invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/SettingsToKeepFragment;->removePreference(Ljava/lang/CharSequence;)V
 
     :cond_4
     const/4 v0, 0x0

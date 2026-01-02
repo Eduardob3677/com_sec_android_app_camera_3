@@ -2277,7 +2277,7 @@
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/sec/android/app/camera/setting/AdvancedRecordingOptionsFragment;->removePreference(Ljava/lang/CharSequence;)V
+    # invoke-direct {p0, v1}, Lcom/sec/android/app/camera/setting/AdvancedRecordingOptionsFragment;->removePreference(Ljava/lang/CharSequence;)V
 
     :cond_3
     invoke-static {v0}, LC/e;->V(LO1/d;)Z
@@ -2305,7 +2305,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/AdvancedRecordingOptionsFragment;->removePreference(Ljava/lang/CharSequence;)V
+    # invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/AdvancedRecordingOptionsFragment;->removePreference(Ljava/lang/CharSequence;)V
 
     :cond_5
     sget-object v0, LO1/d;->SUPPORT_LOG_VIDEO:LO1/d;
@@ -2322,7 +2322,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/AdvancedRecordingOptionsFragment;->removePreference(Ljava/lang/CharSequence;)V
+    # invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/AdvancedRecordingOptionsFragment;->removePreference(Ljava/lang/CharSequence;)V
 
     :cond_6
     sget-object v0, LO1/d;->SUPPORT_APV:LO1/d;
@@ -2339,7 +2339,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/AdvancedRecordingOptionsFragment;->removePreference(Ljava/lang/CharSequence;)V
+    # invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/AdvancedRecordingOptionsFragment;->removePreference(Ljava/lang/CharSequence;)V
 
     sget v0, Lcom/sec/android/app/camera/R$string;->dep_professional_codec:I
 
@@ -2347,7 +2347,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/AdvancedRecordingOptionsFragment;->removePreference(Ljava/lang/CharSequence;)V
+    # invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/AdvancedRecordingOptionsFragment;->removePreference(Ljava/lang/CharSequence;)V
 
     :cond_7
     sget-object v0, LO1/d;->SUPPORT_VIDEO_HIGH_BITRATE:LO1/d;
@@ -2364,7 +2364,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/AdvancedRecordingOptionsFragment;->removePreference(Ljava/lang/CharSequence;)V
+    # invoke-direct {p0, v0}, Lcom/sec/android/app/camera/setting/AdvancedRecordingOptionsFragment;->removePreference(Ljava/lang/CharSequence;)V
 
     :cond_8
     const/4 v0, 0x0
